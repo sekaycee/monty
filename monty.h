@@ -53,7 +53,7 @@ typedef struct globals
  * @f: function to handle the opcode
  *
  * Description: opcode and its function
- * for stack, queues, LIFO, FIFO Holberton project
+ * for stack, queues, LIFO, FIFO ALX project
  */
 typedef struct instruction_s
 {
@@ -83,7 +83,7 @@ void _rotl(stack_t **doubly, unsigned int cline);
 void _rotr(stack_t **doubly, unsigned int cline);
 
 /* get opcodes */
-void (*get_opcodes(char *opc))(stack_t **stack, unsigned int line_number);
+void (*get_opcode(char *opc))(stack_t **stack, unsigned int line_number);
 
 /* imported functions */
 int _sch(char *s, char c);
