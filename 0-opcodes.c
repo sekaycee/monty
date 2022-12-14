@@ -17,9 +17,9 @@ void _push(stack_t **doubly, unsigned int cline)
 		exit(EXIT_FAILURE);
 	}
 
-	for (j = 0; vglo.arg[j] != '\0'; j++)
+	for (j = 0; gvar.arg[j] != '\0'; j++)
 	{
-		if (!isdigit(vglo.arg[j]) && vglo.arg[j] != '-')
+		if (!isdigit(gvar.arg[j]) && gvar.arg[j] != '-')
 		{
 			dprintf(2, "L%u: ", cline);
 			dprintf(2, "usage: push integer\n");
